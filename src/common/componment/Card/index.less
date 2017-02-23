@@ -1,0 +1,56 @@
+// ImgCard
+.card {
+    margin: 10px;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+    background: #fff;
+    overflow: hidden;
+    //header部分 
+    .card-header {
+        font-size: 18px;
+        border-bottom: 1px solid #f0f0f0;
+        text-align: left;
+        padding: 8px 10px;
+        line-height: 1.2;
+        // 带背景图的自定义header
+        &.card-cover {
+            background-size: cover;
+            background-position: 50%;
+            min-height: 10rem;
+            color: #f2f2f2;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: end;
+            -ms-flex-align: end;
+            -ms-grid-row-align: flex-end;
+            align-items: flex-end;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+        }
+    }
+    .title {
+        font-size: 18px;
+        color: #333333;
+        background-color: #ffffff;
+        text-align: left;
+        font-weight: 600;
+        height: auto;
+        line-height: 1.2;
+    }
+    // body部分
+    .card-body {
+        line-height: 1.6;
+        padding: 15px 10px;
+    }
+    // footer部分
+    .card-footer {
+        font-size: 16px;
+        color: #888888;
+        border-top: 1px solid #f0f0f0;
+        border-bottom: 1px solid #f0f0f0;
+        text-align: left;
+        padding: 8px 10px;
+        line-height: 1.2;
+    }
+}
